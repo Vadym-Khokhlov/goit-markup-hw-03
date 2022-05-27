@@ -12,6 +12,21 @@
     
 }
 
+/* general margins and paddings */
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 /* Body */
 
 body {
@@ -30,6 +45,7 @@ body {
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 .list {
@@ -44,22 +60,40 @@ body {
 .link {
     text-decoration: none;
 }
-/* 
+
 .button {
     font-family: inherit;
     cursor: pointer;
     border: none;
     padding: 10, 32;
-    
-} */
-/* Site navigation */
+} 
 
-.nav-list .link {
+/* Site navigation */ 
+
+
+.nav-list-link .link {
     color: var(--primary-text-color);
-}
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+
+.nav-list-link .item {
+    margin-right: 50px;
+}    
+
+.nav-list-link .item:last-child {
+    margin-right: 0;
+  }
 
 .contact-link {
     color: var(--secondary-text-color);
+    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 50px;
 }
 
 /* header */
@@ -67,7 +101,11 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+      }
 
 .header-list {
     color: var(--primary-text-color);
@@ -83,6 +121,27 @@ body {
     color: var(--accent-color);
 }
 
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-link {
+    display: flex;
+   
+}
+
+.header-contact {
+    display: flex;
+    /* margin-left: 50px; */
+
+}
+
 .header .link:hover {
     color: var(--accent-color);
 }
@@ -95,10 +154,6 @@ body {
     color: var(--accent-color);
 }
 /* !!!!! 
-h1,h2,h3 {
-    margin: 0;
-    padding: 0;
-}
 
 .page-header {
     display: flex;
@@ -240,10 +295,16 @@ h1,h2,h3 {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+      
 }
 .logo-link{
     font-family: Raleway, sans-serif;
     font-size: 26px;
+    margin: 24px 93px 25px 0;
 }
 
 
